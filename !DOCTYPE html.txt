@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tharadharshini - Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #f4f4f9, #dfe6e9);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Design */
+        header {
+            background: linear-gradient(120deg, #6c5ce7, #a29bfe);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .profile-card {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-name {
+            font-size: 28px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .profile-role {
+            font-size: 18px;
+            opacity: 0.8;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #6c5ce7;
+            text-align: center;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+
+        /* Sections */
+        .section-content {
+            width: 80%;
+            margin: auto;
+            padding: 30px;
+            background: white;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #6c5ce7;
+            border-bottom: 2px solid #6c5ce7;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* College Logo */
+        .college-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .college-logo {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        /* Skills & Projects */
+        .skills-content, .projects-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .skills-content ul, .projects-content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .skills-content ul li, .projects-content ul li {
+            font-size: 16px;
+            margin: 8px 0;
+        }
+
+        /* Resume Button */
+        .download-button {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #6c5ce7;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .download-button:hover {
+            background: #a29bfe;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #6c5ce7;
+            color: white;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Profile Card -->
+    <header>
+        <div class="profile-card">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h1 class="profile-name">Tharadharshini</h1>
+            <p class="profile-role">Technology Enthusiast | Developer</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I am a Computer Application student with strong knowledge in programming and problem-solving. A passionate technology enthusiast, I focus on cybersecurity, cloud computing, and software development. My goal is to contribute to innovative solutions that enhance digital security and user experience. I am always eager to learn and apply new technologies in real-world applications.</p>
+        </div>
+    </section>
+
+    <!-- Education Section with College Logo -->
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <div class="college-info">
+                <img src="clglogo.jpg" alt="College Logo" class="college-logo">
+                <div>
+                    <p><strong>St. Anne's Arts and Science College</strong></p>
+                    <p>Bachelor of Computer Application</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-content skills-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>Cybersecurity</li>
+                <li>Python</li>
+                <li>IBM Cloud</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-content projects-content">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">Password Strength Analyzer</a></li>
+                <li><a href="#">Personal Portfolio Website</a></li>
+                <li><a href="#">Task Management Sysytem </a></li>
+                <li><a href="#">IOT based Health Monitoring Sysytem</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="section-content">
+            <h2>Resume</h2>
+            <a href="Resume.pdf" target="_blank" class="download-button">Download CV</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Tharadharshini</p>
+    </footer>
+
+</body>
+</html>
